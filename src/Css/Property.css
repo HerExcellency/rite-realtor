@@ -1,0 +1,152 @@
+Copy code
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    justify-content: space-between;
+}
+
+.property-card {
+    padding: 20px;
+    margin: 10px 20px 10px 0px;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #F8F8F8;
+    border-radius: 14px;
+}
+
+.property-card img {
+  max-width: 100%;
+  height: auto;
+}
+.property-card a{
+    color: rgba(#000000, var(--bs-link-opacity, 1));
+    text-decoration:none;
+}
+.property-card h5{
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .property-card .parameters{
+        font-size: 12px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .property-card .parameters span{
+        margin-right: 8px
+    }
+    .property-card .price{
+
+        display: flex;
+    justify-content: space-between;
+    }
+.property-body{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.property-outer-card{
+  display: flex;
+  width: calc(33.33% - 0px);
+}
+
+.property-card .discount-label {
+    padding: 8px;
+    position: relative;
+    float: left;
+    /* margin-top: 35px; */
+    margin-left: 60px;
+    width: 63px;
+    border-radius: 0 4px 4px 0;
+    -webkit-border-radius:0 4px 0 4px;
+   -moz-border-radius:0 4px 0 4px;
+   }
+   
+   .property-card .discount-label:after { 
+   
+       right: 100%; 
+       border: solid transparent; content: " "; 
+       height: 0; 
+       width: 0; 
+       position: absolute;
+       border-color: rgba(136, 183, 213, 0);
+        
+       border-width: 20px; 
+       top: 50%; 
+       margin-top: -20px;} 
+   
+       .property-card  .discount-label:before {
+     content: '';
+     z-index: 2;
+     position: absolute;
+     top: 42%;
+     right: 100%;
+     width: 7px;
+     height: 7px;
+     opacity: .95;
+     background: #ffffff;
+     border-radius: 7px;
+     -webkit-box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+     box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+   
+   }
+   
+   
+   .property-card   .discount-label span {
+         color:#ffffff;
+     font-size:20px;
+   text-align:center;
+     font-family:"Raleway",Helvetica;
+   
+   }
+   
+   
+   .yellow{ 
+   background-color:#feaa00; 
+   }
+   
+   /* .yellow:after{ 
+   border-right-color: #feaa00;
+   } */
+   .yellow:after {
+    content: ""; /* This is required for the pseudo-element */
+    display: inline-block; /* Or block, depending on your design */
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    border: solid transparent;
+    border-width: 5px; /* Adjust the border width as needed */
+    border-right-color: #feaa00;
+  }
+  .property-card .headTag{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* .fa-stack{
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+  }
+  .fa-tag{
+    color:#FF634F;
+  }
+  .fa-inverse{
+    font-size:8px;
+    font-weight:700;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);
+  } */
+   
+   
