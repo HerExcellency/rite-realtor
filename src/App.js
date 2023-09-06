@@ -5,32 +5,22 @@ import About from './Pages/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import PropertyListing from './Pages/PropertyListing';
-import PropertyDetail from './Pages/PropertyDetail';
-// library.add(faTag, faBath);
-
+import PropertyDetail from './Pages/PropertyDetail'; 
 
 
 function App() {
-  
   return (
     <div className="">
       <BrowserRouter>
-        <Routes>   
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          {/* <Route path="/" exact component={PropertyListing} />
-          <Route path="/property/:id" render={(props) => <PropertyDetail {...props} properties={properties} />} /> */}
-          {/* <Route path="/" exact> <PropertyListing properties={properties} /></Route>
-          <Route path="/property/:id"><PropertyDetail properties={properties} /></Route> */}
-          {/* <Route path="/Property" exact component={PropertyListing} />
-          <Route path="/property/:id" component={PropertyDetail} /> */}
-          <Route exact path="/Property" element={<PropertyListing />} />
-          <Route path="/Property/:id" component={<PropertyDetail />} /> 
-       </Routes>      
-       
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Property" element={<PropertyListing />} />
+          <Route path="/property/:id" element={<PropertyDetail />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
 }
-  
+
 export default App;

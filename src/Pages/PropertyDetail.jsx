@@ -1,26 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import properties from '../Data/PropertiesData';
+import Navbar from "../Components/Navbar";
+import Footer from '../Components/Footer';
+import '../Css/Property.css';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const properties = [
-  {
-    id: 1,
-    title: 'Luxurious Villa',
-    description: 'Beautiful 4-bedroom villa with a stunning view.',
-    price: '$1,200,000',
-    imageUrl: 'villa-image.jpg',
-  },
-  {
-    id: 2,
-    title: 'Modern Apartment',
-    description: 'Spacious apartment in the heart of the city.',
-    price: '$500,000',
-    imageUrl: 'apartment-image.jpg',
-  },
-];
 
 const PropertyDetail = () => {
   const { id } = useParams();
-
+  console.log(id);
   const property = properties.find(prop => prop.id === parseInt(id));
 
   if (!property) {
@@ -28,12 +18,27 @@ const PropertyDetail = () => {
   }
 
   return (
-    <div className="property-detail">
-      <img src={property.imageUrl} alt={property.title} />
-      <h2>{property.title}</h2>
-      <p>{property.description}</p>
-      <p>Price: {property.price}</p>
+    <div>
+      <Navbar />
+      <div className="BoxIn">
+        <div className="property-detail">
+          <div className="propertyHead">
+            <h4>{property.title}</h4>
+            <h5><b>₦{property.price}</b></h5>
+          </div>
+          <div className="locationImg">
+            <FontAwesomeIcon icon={faMapMarkerAlt} style={{marginRight: '4px', color: 'orange'}} />
+            <p>{property.location}</p>
+          </div>
+          <img src={property.imageUrl} alt={property.title} />
+          <h2>{property.title}</h2>
+          <p>{property.description}</p>
+          <p>Price: ₦{property.price}</p>
+        </div>
+      </div>
+      <Footer />
     </div>
+    
   );
 };
 

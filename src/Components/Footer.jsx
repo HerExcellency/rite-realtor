@@ -104,8 +104,8 @@ export default function Footer() {
                     <h6>COMPANY</h6>
                     <ul className="footer-links">
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    {/* <li><a href="#">Profile</a></li> */}
+                    {/* <li><a href="#">Our Team</a></li> */}
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Partnerships</a></li>
                     </ul>
@@ -113,8 +113,8 @@ export default function Footer() {
                     <div className="col-md-3 col-lg-3 col-sm-6">
                     <h6>RESOURCES</h6>
                     <ul className="footer-links">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    {/* <li><a href="#">News</a></li> */}
+                    {/* <li><a href="#">FAQs</a></li> */}
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Newsletter</a></li>
@@ -132,8 +132,8 @@ export default function Footer() {
                     <ul className="footer-links">
                     <li><a href="#">Email address</a></li>
                     <li><a href="#">Phone number</a></li>
-                    <li><a href="#">Office Address</a></li>
-                    <li><a href="#">Socials</a></li>
+                    {/* <li><a href="#">Office Address</a></li> */}
+                    {/* <li><a href="#">Socials</a></li> */}
                     </ul>
                     </div>
                     </div>
