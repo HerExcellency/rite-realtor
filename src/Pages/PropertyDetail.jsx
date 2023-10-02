@@ -1,4 +1,7 @@
 import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useParams } from 'react-router-dom';
 import properties from '../Data/PropertiesData';
 import Navbar from "../Components/Navbar";
@@ -16,6 +19,11 @@ const PropertyDetail = () => {
   if (!property) {
     return <div>Property not found.</div>;
   }
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500
+  };
 
   return (
     <div>
@@ -30,10 +38,25 @@ const PropertyDetail = () => {
             <FontAwesomeIcon icon={faMapMarkerAlt} style={{marginRight: '4px', color: 'orange'}} />
             <p>{property.location}</p>
           </div>
-          <img src={property.imageUrl} alt={property.title} />
+          {/* <img src={property.imageUrl} alt={property.title} />
           <h2>{property.title}</h2>
           <p>{property.description}</p>
-          <p>Price: ₦{property.price}</p>
+          <p>Price: ₦{property.price}</p> */}
+          <div className="slider-wrapper">
+
+          <Slider {...settings}>
+            
+          {slidesData.map((slide) =>
+
+            <div className="slick-slide" key={slide.id}>
+              <h2 className="slick-slide-title">{slide.title}</h2>
+              <img className="slick-slide-image" src={`https://picsum.photos/800/400?img=${slide.id}`} />
+              <label className="slick-slide-label">{slide.label}</label>
+            </div>
+
+            )}
+          </Slider>
+          </div>
         </div>
       </div>
       <Footer />

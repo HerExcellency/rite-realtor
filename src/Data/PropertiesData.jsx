@@ -8,7 +8,7 @@ const properties = [
       imageUrl: '//res.cloudinary.com/ijeomaonuaju/image/upload/v1693154975/project3_ct0bip.png',
       bedroom: '3',
       bathroom: '2',
-      squareMeter: '500sqm'
+      squareMeter: '500sqm',
     },
     {
       id: 2,
