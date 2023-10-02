@@ -9,6 +9,7 @@ import Footer from '../Components/Footer';
 import '../Css/Property.css';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { slidesData } from '../Data/PropertyDetailsData';
 
 
 const PropertyDetail = () => {
@@ -43,19 +44,20 @@ const PropertyDetail = () => {
           <p>{property.description}</p>
           <p>Price: ₦{property.price}</p> */}
           <div className="slider-wrapper">
-
+          {slidesData && slidesData.length > 0 && (
           <Slider {...settings}>
             
           {slidesData.map((slide) =>
 
             <div className="slick-slide" key={slide.id}>
               <h2 className="slick-slide-title">{slide.title}</h2>
-              <img className="slick-slide-image" src={`https://picsum.photos/800/400?img=${slide.id}`} />
+              <img className="slick-slide-image" src={`https://picsum.photos/800/400?img=${slide.id}`}  alt="propeties"/>
               <label className="slick-slide-label">{slide.label}</label>
             </div>
 
             )}
           </Slider>
+          )}
           </div>
         </div>
       </div>
