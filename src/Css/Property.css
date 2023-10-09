@@ -3,6 +3,9 @@ Copy code
   text-align: center;
   padding: 20px;
 }
+.propertiesDetails{
+  background: rgba(133, 133, 133, 0.06);
+}
 
 .property-list {
     display: flex;
@@ -138,7 +141,7 @@ Copy code
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 0 auto;
     padding: 70px 0px;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 .propertyHead{
@@ -160,3 +163,72 @@ Copy code
 .locationImg p{
   margin-bottom: 0px
 }   
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Style for individual thumbnail items */
+.thumbnail-item {
+  margin-right: 10px;
+}
+
+.thumbnail-item img {
+  width: 100px; /* Adjust the width of the thumbnails as needed */
+  height: 60px; /* Adjust the height of the thumbnails as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the thumbnail area */
+  border: 2px solid #ccc; /* Border color for the thumbnails */
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Add a smooth transition effect for the border color */
+}
+
+.thumbnail-item img:hover {
+  border-color: #007bff; /* Border color on hover */
+}
+ 
+  .slick-slider {
+  width: 100%;
+  /* height: 508px; */
+}
+.slick-track{
+  width: 100%;
+  /* height: 500px */
+
+}
+.slick-slide img{
+  height: auto;
+  width: 100%;
+}
+.propertyCardGen{
+  margin: 9px 0px;
+  background-color: #fff;
+    padding: 40px 22px;
+}
+.propertyCardGen .cardLay{
+  display: flex;
+  margin-top: 30px;
+}
+.factsFeatures{
+  background-color: #fff
+}
+.figuresF{
+  display: flex;
+  justify-content: flex-start;
+}
+.figuresF h6{
+  margin-bottom: 4px;
+}
+.amenities ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.amenities ul li {
+  margin-right: 20px;
+  width: auto;
+  padding: 10px;
+}

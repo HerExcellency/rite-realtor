@@ -1,6 +1,6 @@
 import { Carousel } from 'react-carousel-minimal';
 
-function App() {
+function propertii() {
  const data = [
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
@@ -87,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default propertii;

@@ -2,7 +2,7 @@ const slidesData = [
     {
       id: 1,
       title: 'repellendus id ullam',
-      label: 'Dolorem officiis temporibus.'
+      label: 'Dolorem officiis temporibus.',
     }, {
       id: 2,
       title: 'excepturi consequatur est',

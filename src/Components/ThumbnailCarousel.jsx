@@ -28,3 +28,4 @@ const ThumbnailCarousel = ({ images }) => {
     </div>
   );
 };
+export default ThumbnailCarousel;
