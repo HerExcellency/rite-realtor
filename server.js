@@ -14,13 +14,13 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/submit-form', (req, res) => {
-  const { address, inspectionDate, inspectorName, notes } = req.body;
+  const { fullName, emailAdd, telephone } = req.body;
 
   const mailOptions = {
     from: 'YOUR_EMAIL@gmail.com', // Replace with your email address
     to: 'RECIPIENT_EMAIL@example.com', // Replace with recipient's email address
     subject: 'New Property Inspection Form Submission',
-    text: `Address: ${address}\nInspection Date: ${inspectionDate}\nInspector Name: ${inspectorName}\nNotes: ${notes}`,
+    text: `Full Name: ${fullName}\nEmail Address: ${emailAdd}\nTelephone Number: ${telephone}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

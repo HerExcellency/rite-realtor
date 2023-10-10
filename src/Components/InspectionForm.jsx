@@ -4,10 +4,13 @@ import axios from 'axios';
 
 function InspectionForm() {
   const [formData, setFormData] = useState({
-    address: '',
-    inspectionDate: '',
-    inspectorName: '',
-    notes: '',
+    // address: '',
+    fullName: '',
+    // inspectionDate: '',
+    emailAdd: '',
+    // inspectorName: '',
+    telephone:'',
+    // notes: '',
   });
 
   const handleChange = (e) => {
@@ -34,39 +37,42 @@ function InspectionForm() {
 
   return (
     <div className="App">
-      <h1>Property Inspection Form</h1>
+      <h1>Book A Viewing</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Property Address:</label>
+          {/* <label>Property Address:</label> */}
           <input
             type="text"
-            name="address"
-            value={formData.address}
+            name="fullName"
+            value={formData.fullName}
             onChange={handleChange}
             required
+            placeholder="First Name, Last Name"
           />
         </div>
         <div className="form-group">
-          <label>Inspection Date:</label>
+          {/* <label>Inspection Date:</label> */}
           <input
-            type="date"
-            name="inspectionDate"
-            value={formData.inspectionDate}
+            type="mail"
+            name="emailAdd"
+            value={formData.emailAdd}
             onChange={handleChange}
             required
+            placeholder='Email Address'
           />
         </div>
         <div className="form-group">
-          <label>Inspector Name:</label>
+          {/* <label>Inspector Name:</label> */}
           <input
             type="text"
-            name="inspectorName"
-            value={formData.inspectorName}
+            name="telephone"
+            value={formData.telephone}
             onChange={handleChange}
             required
+            placeholder='Phone Number'
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Inspection Notes:</label>
           <textarea
             name="notes"
@@ -75,7 +81,7 @@ function InspectionForm() {
             rows="4"
             required
           />
-        </div>
+        </div> */}
         <button type="submit">Submit</button>
       </form>
     </div>
