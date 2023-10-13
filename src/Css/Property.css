@@ -232,3 +232,7 @@ Copy code
   width: auto;
   padding: 10px;
 }
+.formCenter{
+  display: flex;
+  justify-content: center;
+}

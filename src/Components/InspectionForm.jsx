@@ -36,9 +36,11 @@ function InspectionForm() {
   };
 
   return (
-    <div className="App">
-      <h1>Book A Viewing</h1>
+    <div className="formCenter">
+      {/* <h1>Book A Viewing</h1> */}
       <form onSubmit={handleSubmit}>
+
+      <h1>Book A Viewing</h1>
         <div className="form-group">
           {/* <label>Property Address:</label> */}
           <input
