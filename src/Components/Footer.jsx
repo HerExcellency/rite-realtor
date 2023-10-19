@@ -8,6 +8,7 @@ import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import whiteLogo from '../media/whiteLogo.png'
+import MediaLinks from './MediaLinks';
 
 
 
@@ -91,11 +92,11 @@ export default function Footer() {
                 <div className="col-md-3 col-lg-3 col-sm-12 add-sect">
                     <img src={whiteLogo} alt="Rite Realtors Logo" />
                     <p>1B Olabanji Olajide Crescent, Off Mobolaji Johnson Estate, Lekki Phase 1, Lekki, Lagos</p>
-                    <div className="social-media-icons">
+                    {/* <div className="social-media-icons">
                         <a href="https://www.instagram.com/your-instagram-profile">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -106,7 +107,7 @@ export default function Footer() {
                     <li><a href="#">About Us</a></li>
                     {/* <li><a href="#">Profile</a></li> */}
                     {/* <li><a href="#">Our Team</a></li> */}
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="#" >Careers</a></li>
                     <li><a href="#">Partnerships</a></li>
                     </ul>
                     </div>
@@ -130,10 +131,9 @@ export default function Footer() {
                     <div className="col-md-3 col-lg-3 col-sm-6">
                     <h6>CONTACT US</h6>
                     <ul className="footer-links">
-                    <li><a href="#">Email address</a></li>
-                    <li><a href="#">Phone number</a></li>
-                    {/* <li><a href="#">Office Address</a></li> */}
-                    {/* <li><a href="#">Socials</a></li> */}
+                    <li><a href="mailto:hello@riterealtors.com">hello@riterealtors.com</a></li>
+                    <li><a href="tel:+2348094137777">0809 413 7777</a></li>
+                    <MediaLinks />
                     </ul>
                     </div>
                     </div>

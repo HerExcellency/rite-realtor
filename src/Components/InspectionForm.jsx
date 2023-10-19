@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 // import './App.css';
 import axios from 'axios';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function InspectionForm() {
   const [formData, setFormData] = useState({
@@ -20,7 +24,15 @@ function InspectionForm() {
       [name]: value,
     });
   };
-
+  const handlePhoneCall = () => {
+    window.open('tel:+2348094137777'); 
+  };
+  const handleEmail = () => {
+    window.open('mailto:hello@riterealtors.com'); // Replace recipient@example.com with the recipient's email address
+  };
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/+2348094137777', '_blank'); // Replace 1234567890 with the recipient's phone number including the country code
+  };
   const handleSubmit = (e) => {
     
     e.preventDefault();
@@ -40,7 +52,7 @@ function InspectionForm() {
       {/* <h1>Book A Viewing</h1> */}
       <form onSubmit={handleSubmit}>
 
-      <h1>Book A Viewing</h1>
+      <h4>Book A Viewing</h4>
         <div className="form-group">
           {/* <label>Property Address:</label> */}
           <input
@@ -74,17 +86,18 @@ function InspectionForm() {
             placeholder='Phone Number'
           />
         </div>
-        {/* <div className="form-group">
-          <label>Inspection Notes:</label>
-          <textarea
-            name="notes"
-            value={formData.notes}
-            onChange={handleChange}
-            rows="4"
-            required
-          />
-        </div> */}
-        <button type="submit">Submit</button>
+        
+        <div className='formButton'>
+          <button type="submit">Request For Inspection</button>
+          <div className="InspectionFormIcons">
+          <span onClick={handlePhoneCall}><FontAwesomeIcon icon={faPhone} /></span>
+          <span onClick={handleEmail}><FontAwesomeIcon icon={faEnvelope} /></span>
+          <span onClick={handleWhatsApp}><FontAwesomeIcon icon={faWhatsapp} /></span>
+          
+          </div>
+          {/* <p>hello@riterealtors.com</p> */}
+        </div>
+        <p>hello@riterealtors.com</p>
       </form>
     </div>
   );

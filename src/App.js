@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import PropertyListing from './Pages/PropertyListing';
 import PropertyDetail from './Pages/PropertyDetail'; 
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Property" element={<PropertyListing />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

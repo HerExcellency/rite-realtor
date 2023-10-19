@@ -1,0 +1,11 @@
+.social-media-links{
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin-top: 7px;
+}
+.social-media-links a{
+    padding: 4px;
+    background-color: orange;
+    border-radius: 2px;
+}

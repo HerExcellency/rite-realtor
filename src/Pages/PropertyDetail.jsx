@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import {faBed} from '@fortawesome/free-solid-svg-icons';
 import {faBath} from '@fortawesome/free-solid-svg-icons';
+
 import PropertyCarousel from '../Components/PropertyCarousel';
 import InspectionForm from '../Components/InspectionForm';
 

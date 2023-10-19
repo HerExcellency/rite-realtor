@@ -236,3 +236,53 @@ Copy code
   display: flex;
   justify-content: center;
 }
+.formInspection{
+  padding: 50px 0px;
+}
+.form-group input{
+  padding: 9px 11px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  color: #cfcfcf;
+  width: 100%
+}
+.form-group input:focus{
+  /* padding: 9px 11px;
+  margin: 5px 0px;
+  border-radius: 8px; */
+  color: #cfcfcf;
+  border-color: orange
+}
+.formCenter button{
+  padding: 4px 12px;
+    margin-top: 20px;
+    color: #000;
+    background-color: #eeb400;
+    border-radius: 4px;
+}
+.formCenter form{
+  width: 45%
+}
+@media (max-width: 650px){
+  .formCenter form{
+    width: 90%
+  }
+}
+.formCenter form h4, .formCenter form p{
+  text-align: center;
+}
+.formButton{
+  display: grid;
+  justify-content: center;
+}
+.InspectionFormIcons span{
+  padding: 5px 10px;
+    background-color: #eeb400;
+    border-radius: 50%;
+}
+.InspectionFormIcons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}

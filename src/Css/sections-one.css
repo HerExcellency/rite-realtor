@@ -424,6 +424,10 @@ body{background-color: #AF392C}
     }
     .links-footer a:hover{
         color:#eeb004;
+        /* background-color: #fff; */
+    }
+    .social-media-links a:hover{
+        background-color: #fff;
     }
     .links-footer ul {
         padding-left: 0rem;
