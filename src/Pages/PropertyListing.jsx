@@ -22,7 +22,6 @@ const PropertyListing = () => {
               <div className="property-card">
                 <div className="headTag">
                   <div><h5>{property.title}</h5></div>
-                  {/* <div className="discount-label yellow"> <h6>For Sale</h6> </div> */}
                   <div className="justit"> <img src={forSale} alt="for Sale icon" /></div>
                 </div>
                 <Link to={`/property/${property.id}`}>
